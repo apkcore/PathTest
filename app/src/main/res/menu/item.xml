@@ -13,6 +13,11 @@
         android:title="水波纹"
         app:showAsAction="never"/>
     <item
+        android:id="@+id/item4"
+        android:icon="@mipmap/ic_launcher"
+        android:title="水波纹优化"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/item3"
         android:icon="@mipmap/ic_launcher"
         android:title="小球"

@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import com.apkcore.pathtest.fragments.BallFragment;
 import com.apkcore.pathtest.fragments.SimpleFragment;
+import com.apkcore.pathtest.fragments.Wave2Fragment;
 import com.apkcore.pathtest.fragments.WaveFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -57,6 +58,13 @@ public class MainActivity extends AppCompatActivity {
                     tran.remove(fr);
                 }
                 fr = new BallFragment();
+                tran.add(R.id.frame, fr).commit();
+                break;
+            case R.id.item4:
+                if (fr != null) {
+                    tran.remove(fr);
+                }
+                fr = new Wave2Fragment();
                 tran.add(R.id.frame, fr).commit();
                 break;
             default:
